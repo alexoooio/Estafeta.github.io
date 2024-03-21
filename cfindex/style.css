@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* O el color de fondo que prefieras */
+}
+
+
+
+nav ul li.divider {
+    padding: 0 10px; /* Ajusta el espaciado a tu gusto */
+    color: #d10000; /* O el color que prefieras */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centra la lista horizontalmente */
+    display: table; /* Hace que la lista se comporte como una tabla para centrarla */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 10px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d10000; /* Ajusta este color al deseado */
+    font-weight: bold; /* Hace el texto de los enlaces más grueso */
+}
+
+.datetime {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d10000; /* Ajusta este color al deseado */
+    color: #ffffff;
+    border-radius: 5px;
+    /* Centra el contenido de fecha y hora */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    nav ul li {
+        display: block; /* Muestra los elementos de la lista en bloque para dispositivos móviles */
+        margin: 10px auto; /* Aumenta el espacio y centra cada elemento */
+    }
+
+    /* Ajusta el tamaño de la fuente para dispositivos más pequeños si es necesario */
+    h1, .datetime {
+        font-size: smaller;
+    }
+
+    
+}
+
